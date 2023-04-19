@@ -1,0 +1,107 @@
+<input>
+    <constants>
+        <constant name="waitTime" type="int">0</constant>
+        <constant name="display" type="bool">false</constant>
+
+        <!-- S = device states     C = network congestion   P = device power    I = ids placement -->
+        <constant name="displayType" type="char">S</constant>
+
+        <constant name="T" type="int">100</constant>
+        <constant name="tries" type="int">100</constant>
+        
+        <constant name="genericMessageSize" type="int">200</constant>
+        <constant name="maliciousMessageSize" type="int">1000</constant>
+        <constant name="bufferSize" type="int">100</constant>
+
+        <constant name="batteryPowered" type="bool">false</constant>
+        <constant name="powerCapacity" type="int">13000</constant> <!-- In joules -->
+        <constant name="messagePower" type="float">0.0000025</constant> <!-- In joules -->
+        <constant name="idsPower" type="float">0.01</constant> <!-- In joules -->
+
+        <constant name="randomScanProbability" type="float">1</constant>
+        <constant name="localScanProbability" type="float">1</constant>
+        <constant name="initialInfectedProportion" type="float">0.1</constant>
+    </constants>
+    <parameters>
+        <parameter name="propagation" type="char">
+            <!-- <value>P</value> -->
+            <value>L</value>
+            <!-- <value>R</value> -->
+        </parameter>
+        <parameter name="scanRate" type="int">
+            <!-- <value>1</value> -->
+            <value>5</value>
+            <!-- <value>10</value> -->
+            <!-- <value>20</value> -->
+        </parameter>
+        <parameter name="infectionProbability" type="float">
+            <!-- <value>0.25</value>
+            <value>0.5</value> -->
+            <value>0.9</value>
+        </parameter>
+        <parameter name="detectionProbability" type="float">
+            <value>0.9</value>
+            <!-- <value>0.5</value> -->
+            <!-- <value>0.75</value> -->
+        </parameter>
+        <parameter name="mutationProbability" type="float">
+            <value>0.01</value>
+            <!-- <value>0.1</value> -->
+            <!-- <value>0.2</value> -->
+        </parameter>
+        <parameter name="wsnCount" type="int">
+            <value>1</value>
+            <!-- <value>5</value> -->
+            <!-- <value>10</value> -->
+        </parameter>
+        <parameter name="topology" type="char">
+            <!-- <value>S</value> -->
+            <!-- <value>T</value> -->
+            <!-- <value>M</value> -->
+            <!-- <value>D</value>
+            <value>L</value> -->
+            <value>R</value>
+        </parameter>
+        <parameter name="deviceCount" type="int">
+            <value>100</value>
+        </parameter>
+        <parameter name="routerRatio" type="float">
+            <value>0.0</value>
+            <value>0.1</value>
+            <value>0.2</value>
+            <value>0.3</value>
+            <value>0.4</value>
+            <value>0.5</value>
+            <value>0.6</value>
+            <value>0.7</value>
+            <value>0.8</value>
+            <value>0.9</value>
+            <value>1.0</value>
+        </parameter>
+        <parameter name="idsRatio" type="float">
+            <value>0.0</value>
+            <value>0.1</value>
+            <value>0.2</value>
+            <value>0.3</value>
+            <value>0.4</value>
+            <value>0.5</value>
+            <value>0.6</value>
+            <value>0.7</value>
+            <value>0.8</value>
+            <value>0.9</value>
+            <value>1.0</value>
+        </parameter>
+        <parameter name="idsType" type="char">
+            <!-- <value>H</value> -->
+            <!-- <value>N</value> -->
+            <value>D</value>
+            <!-- <value>C</value> -->
+        </parameter>
+        <parameter name="idsPlacement" type="char">
+            <!-- <value>R</value>
+            <value>D</value> -->
+            <value>B</value>
+            <!-- <value>C</value> -->
+        </parameter>
+    </parameters>
+</input>
